@@ -1,0 +1,13 @@
+const express = require('express')
+const register = require('./Routes/register.js')
+const cors =require('cors')
+const login = require('./Routes/login.js')
+require('dotenv').config()
+
+const app = express()
+app.use(express.urlencoded({extended:true}))
+app.use(express.json())
+app.use(cors())
+app.use(register)
+app.use(login)
+app.listen(process.env.PORT || 5000,console.log('Workin on:3000'))
