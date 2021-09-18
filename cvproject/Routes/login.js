@@ -36,6 +36,10 @@ Router.post('/login',async(req,res,next)=>{
             surname,
             exp:Math.floor(Date.now()/1000)+39600
         },process.env.ACCESS_TOKEN)
+        const cookieoption = {
+            expires : new Date(Date.now()+39600)
+        }
+        res.cookie("jwt",token,cookieoption)
         res.send(token)
         next()
     }
@@ -57,6 +61,19 @@ Router.post('/login',async(req,res,next)=>{
 Router.post('/posts',loginauth,(req,res,next)=>{
     res.send("<happy hacking>")
 })
+// Router.post('/logout',(req,res,next)=>{
+//     try{
+//         const cookieoption = {
+//             expires : new Date(Date.now()+1000)
+//         }
+//         res.cookie('jwt','expiredtoken',cookieoption)
+//     res.status(200)
+
+//     }catch(err){
+//         console.error(err);
+//         res.json(err)
+//     }
+// })
 // Router.get('/posts',authenticateToken,(req,res,next)=>{
 //     res.json(posts.filter(post=>post.username === req.user.name))
 // })
