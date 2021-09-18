@@ -1,11 +1,15 @@
 import React, {  useState } from 'react'
-import './style.css'
+import { useHistory } from 'react-router'
+import {Link} from '@material-ui/core';
+
+import './css/style.css'
 import axios from 'axios'
 require('dotenv').config()
 export default function Login() {
     const [value ,setValue] = useState('')
     const [pass ,setPass] = useState('')
     const [error,setError] = useState([])
+    const history = useHistory()
     const sendData=(email,pass)=>{
         if(email !== '' && email !==undefined && email !== null &&pass !== '' && pass !==undefined && pass !== null )
         {
@@ -28,7 +32,7 @@ export default function Login() {
                     const message = result.data.message
                     if(status === 1){
                         console.log(message);
-                        alert(message)
+                        history.push('/register')
                     }else {
                         console.log(status);
                         setError([...error,{msg:result.message}])
@@ -73,7 +77,14 @@ export default function Login() {
                         <button type="button" onClick={()=>{
                             sendData(value,pass)
                         }} className="btn col-10 text-center" >Login</button>
+                        
                     </div>
+                    <div className="col-12 d-flex justify-content-center">
+                    <Link href="/register" className="text-center" variant="body2">
+                        {"You don't have an account?"}
+                    </Link>
+                    </div>
+                    
                 </section>
             </form>
         </div>

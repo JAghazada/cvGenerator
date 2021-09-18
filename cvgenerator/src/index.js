@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Login from './Components/Login';
-import Text from './Components/Cross';
 import './index.css';
-import Logo from './Components/Logo';
-import Input from './Components/Input';
+
+import Pages from './Components/Pages';
+import { Provider } from 'react-redux';
+import store from './store';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Input/>
-    <Text/>
-    <Logo/>
-    <Login/>
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <Pages/>
+    </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
