@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&display=swap');
+
+*{
+    font-weight: 500;
+    font-family: 'Roboto',sans-serif;
+}
+.row{ margin-left: 0; margin-right: 0;}
+.h2-login {
+    font-family: Roboto,sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 46px;
+    color: #000;
+    text-align: center;
+}
+.rnf{
+    font-size: 28px;
+    font-weight: 600;
+}
+.rnga{
+    font-size: 20px;
+
+}
+.alttext{
+    font-size: 26px;
+    color: rgb(107,107,107);
+    text-align: center;
+}
+.get-started {
+    background: rgb(62, 148, 228);
+    border: 1px #ededed solid;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.flags {
+    flex-wrap: wrap;
+}
+.china-img ,.germany-img,.russia-img 
+{
+    width: 200px !important;
+    height: 80px;
+    /* background: #0c66ff; */
+
+}
+.china,.germany,.russia{
+    background: transparent;
+    width: 300px;
+    height: 150px;
+}
+.china:hover,.germany:hover,.russia:hover {
+    background: #eee;
+    -webkit-box-shadow: 0 8px 16px 0 rgb(0 0 0 / 4%);
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 4%);
+    border-radius: 16px;
+    
+}
+.china >div,.germany >div,.russia >div{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+}
+.site{
+    width: 100%;
+    padding: 5px;
+    height: 500px;
+}
+.member >img {
+    width: 44%;
+    height: 180px;
+    border-radius: 999px;
+    border: 1px darkcyan solid;
+    margin: 2% auto;
+}
+.member,.names,.property{
+    /* height: 500px; */
+    display: flex;
+    justify-content: center;
+
+}
+.names >div{
+    font-size: 26px;
+    font-family: 'Crimson Pro',serif;
+    color: #101;
+}
+.property >p,.property>p>a{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    text-align: center;
+}
+.ourteam{
+        background-color: rgb(244, 247, 248);
+}
+.guide-text{
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 541;
+    color: rgb(107,107,107);
+}
+.china-span>a ,.germany-span >a,.russia-span >a {
+    color: rgb(107,107,107);
+    color: #000;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+.aboutus-text {
+    font-size: 40px;
+    font-family: 'Crimson Pro',serif;
+    font-weight: 600;
+}
+.china-span>a:active ,.germany-span >a:active,.russia-span >a:active{
+    color: #ed2939;
+} 
+
+.guide-text-header {
+    font-size: 33px;
+    font-weight: 600;
+    font-family: 'Roboto',sans-serif;
+}
+.btn-login {
+    margin: 0 auto;
+    background-color: #0c66ff;
+    color: #eee;
+    margin-top: 5%;
+}
+.section-login{
+    width: 100%;
+    height: 200px;
+}
+.login-form {
+    background-color: #fff;
+    padding-bottom:17px;
+    width: 486px;
+    height: 260px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    -webkit-box-shadow: 0 8px 16px 0 rgb(0 0 0 / 4%);
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 4%);
+}
+.input-field {
+    position: relative;
+    width: 250px;
+    height: 44px;
+    line-height: 44px;
+}
+.label-login {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 100%;
+    color: #b6b6b6;
+    font-weight: 400;
+    transition: 0.2s all;
+    cursor: text;
+}
+.input-login {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #b6b6b6;
+    box-shadow: none;
+    color: #111;
+}
+.input-login:invalid {
+    outline: 0;
+color: #eee;
+    border-color: #eee;
+}
+
+.input-login:focus,
+.input-login:valid {
+    border-color: #b6b6b6;
+    
+}
+
+.input-login:focus~label,
+.input-login:valid~label {
+    top: -16px;
+    left: 13px;
+    color: #b6b6b6;
+}
+.input-login:focus ~label {
+    color: #0c66ff;
+    
+}
+.input-login:focus {
+border-color: #0c66ff;
+}
+
+.input-login,.label-login{
+    font-size: 14px;
+    padding: 0;
+}
+.label-login{
+    font-size: 16px;
+}

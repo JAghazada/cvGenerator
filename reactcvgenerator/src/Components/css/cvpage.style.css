@@ -1,0 +1,103 @@
+
+.row-cvpage{
+    margin:0;
+    padding:0
+}
+.header-cvpage{
+    height: 75px;
+    border-bottom: 3px #eaeaea solid;
+    background-color: #fff;
+    box-sizing: 0 2px 4px 0 rgb(0 0 0 / 8%);
+}
+.nav-cvpage{
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+.marka-cvpage{
+    font-size: 35px;
+    font-weight: 700;
+}
+.h1-cvpage{
+    font-weight: 700;
+}
+.create-cvpage{
+    font-weight: normal;
+    height: 44px;
+    background-color: #ebebeb;
+    border-radius: 6px;
+    scale: opacity .2s linear;
+    transition: all .35s ease-in-out; 
+}
+.create-cvpage>span {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 8px 16px;
+    cursor: pointer;
+    
+
+}
+.create-cvpage:hover {
+    transform: scale(1.2);
+}
+.cvpreview{
+    height: 328px;
+    background-color: #fff;
+    cursor: pointer;
+    width: 232px;
+    border: 2px #eaeaea solid;
+    -webkit-transition: opacity .2s linear;
+    scale: opacity .2s linear;
+    transition-property: opacity;
+    transition-duration:scale 0.2s;
+    transition-timing-function: linear;
+    transition-delay:scale 0s;
+    transition: all 0.35s ease-in-out; 
+
+}
+.cvpreview:hover{
+    transform: scale(1.08);
+}
+.twopdf{
+    color: #0c66ff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    background-color: #eaeaea;
+    border: 2pd #666 solid;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.incircle{
+    width: 34px;
+    height: 34px;
+    background-color: #fafafa;
+    border: 2pd #666 solid;
+    border-radius: 999px;
+
+}
+.edit,.twopdf,.date {
+    font-size: 12px;
+}
+.date{
+    color: #bbb;
+    font-weight: 400;
+    font-family: 'Roboto',sans-serif;
+}
+.cvname{
+    font-size: 15px;
+}
+.edit,.cvname{
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+}
+.edit:hover{
+    cursor: pointer;
+}
